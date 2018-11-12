@@ -2,7 +2,6 @@ package com.sopra.controller;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,11 +33,7 @@ public class DeleteEmpServlet extends HttpServlet {
 		
 		logger.info("Employee deleted");
 		
-		/*
-		 * RequestDispatcher dispatcher=request.getRequestDispatcher("index.jsp");
-		 * dispatcher.forward(request, response);
-		 */
-		// send request to browser first then to index
+			// send request to browser first then to index
 		response.sendRedirect("index.jsp");
 	}
 }

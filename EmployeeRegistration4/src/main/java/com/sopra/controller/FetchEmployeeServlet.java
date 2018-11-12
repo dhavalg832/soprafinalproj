@@ -19,7 +19,7 @@ import com.sopra.model.Employee;
 public class FetchEmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private EmployeeDao dao = new EmployeeDaoImpl();
-	static Logger logger = Logger.getLogger(DeleteEmpServlet.class);
+	static Logger logger = Logger.getLogger(FetchEmployeeServlet.class);
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

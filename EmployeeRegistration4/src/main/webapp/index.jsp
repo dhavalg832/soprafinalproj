@@ -12,13 +12,21 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	thead{
+	background-color:rgb(59,118,135);
+	color:white;
+	}
+	tbody{
+	background-color:lightblue !important;}
+	</style>
 
 </head>
 <body>
 <nav class="navbar navbar-inverse">
 <div class="container-fluid">
 <div class="navbar-header">
-<a class="navbar-brand" href="index.jsp" style="color:white">Website Name</a>
+<a class="navbar-brand" href="index.jsp" style="color:white">EmpData</a>
 </div>
 
 <ul class="nav navbar-nav navbar-right">
@@ -62,7 +70,7 @@ dispatcher.include(request, response);
 	</div>
 <div>
 <footer class="jumbotron text-center" align="center" style="padding: 6px 40px 6px 40px;margin-bottom:0; position: fixed; left:0px; bottom:0px; width:100%" >
-&copy; 2018 Minimalistic Website &nbsp;
+&copy; 2018 EmpData &nbsp;
 </footer>
 </div>
 </body>

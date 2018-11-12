@@ -17,6 +17,9 @@
 .heading {
 	text-align: center;
 	margin-bottom: 20px;
+	color:white;
+		font-weight:bold;
+	
 }
 
 #form {
@@ -25,12 +28,14 @@
 	margin: 5% auto;
 	box-shadow: 0 9px 13px 5px;
 	border-radius: 5px;
+		background-color:rgb(59,118,135);
+	
 }
 
 #form1 {
 	align: center;
 	border-radius: 5px;
-	background: #D6D6D6;
+	background-color:lightblue;
 	padding: 20px;
 	margin: 10px 0 15px 30px;
 }
@@ -42,7 +47,7 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.jsp" style="color:white">Website Name</a>
+				<a class="navbar-brand" href="index.jsp" style="color:white">EmpData</a>
 			</div>
 		</div>
 	</nav>
@@ -99,7 +104,7 @@
 					<div class="col-sm-9">
 					<input type="tel"
 						class="form-control" id="phone" placeholder="Enter phone"
-						name="phone" pattern="[0-9]{10}" value="${emp.phone}" required="required">
+						name="phone" pattern="[0-9]{10}" title="Provide in number format and length should be 10" value="${emp.phone}" required="required">
 				</div>
 				</div>
 
@@ -123,7 +128,7 @@
 				</div>
 				</div>
 				<div style="width: fit-content; margin:auto;">
-				<input type="submit" name="submit" class="btn btn-primary"
+				<input type="submit" name="submit" class="btn btn-primary" style="background-color:#993367"
 					value="Update">
 			</div>
 		</form>
@@ -131,7 +136,7 @@
 	
 	<div>
 <footer class="jumbotron text-center" align="center" style="padding: 6px 40px 6px 40px;margin-bottom:0; position: fixed; left:0px; bottom:0px; width:100%" >
-&copy; 2018 Minimalistic Website &nbsp;
+&copy; 2018 EmpData &nbsp;
 </footer>
 </div>
 	
