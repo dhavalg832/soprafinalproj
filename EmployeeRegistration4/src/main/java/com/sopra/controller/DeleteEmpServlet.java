@@ -31,6 +31,7 @@ public class DeleteEmpServlet extends HttpServlet {
 		String id = request.getParameter("id");
 		int empid = Integer.parseInt(id);
 		dao.deleteEmp(empid);
+		
 		logger.info("Employee deleted");
 		
 		/*

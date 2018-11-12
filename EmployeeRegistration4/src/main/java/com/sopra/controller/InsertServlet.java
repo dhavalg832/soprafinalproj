@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import com.sopra.dao.EmployeeDao;
 import com.sopra.dao.EmployeeDaoImpl;
 import com.sopra.model.Employee;
@@ -20,6 +22,7 @@ import com.sopra.model.Employee;
 public class InsertServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private EmployeeDao dao = new EmployeeDaoImpl();
+	static Logger logger = Logger.getLogger(InsertServlet.class);
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -36,7 +39,7 @@ public class InsertServlet extends HttpServlet {
 
 		Employee emp = new Employee(name, address, phone, jobloc, designation, email);
 		Employee emp1 = dao.saveEmp(emp);
-
+		logger.info("Employee added");
 		response.sendRedirect("index.jsp");
 	}
 
